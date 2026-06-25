@@ -39,18 +39,6 @@ flowchart LR
     DA --> EV
 ```
 
-**Architecture (text view):**
-
-```
-INDEXING                RETRIEVAL                          GENERATION
---------                ---------                          ----------
-Corpus ──> Chunker ──>  Dense Retriever ─┐
-            │                            ├──> RRF Fusion ──> Hybrid Top-k   ──> Hybrid Answer ─┐
-            ├──> Embedder ──> FAISS     │                                            │
-            │                            └──> Dense-only Top-k ──> Dense-only Answer ──┤
-            └──> BM25 Index ──> Sparse Retriever ─┘                                            ──> Eval Harness
-```
-
 ---
 
 ## Framework overview
@@ -69,26 +57,6 @@ flowchart TD
     H --> J[Generation Metrics]
     I --> K[Scorecard]
     J --> K
-```
-
-**Pipeline (text view):**
-
-```
-Synthetic Corpus
-      │
-      ▼
-   Chunking
-      │
-      ├──> BM25 Index  ──┐
-      └──> Dense Index ──┤
-                         ▼
-                  Retrieval Layer
-                         │
-                         ▼
-                   Top-k Contexts ──┬──> Retrieval Metrics ──┐
-                         │                                │
-                         ▼                                ▼
-                  Generation Layer ──> Answers ──> Generation Metrics ──> Scorecard
 ```
 
 Each layer is independently measurable. A drop in the final scorecard points to exactly one layer.
