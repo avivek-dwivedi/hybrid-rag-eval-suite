@@ -9,6 +9,8 @@
 
 > A reproducible evaluation harness for **Hybrid Retrieval-Augmented Generation** pipelines. Compares dense retrieval, BM25 sparse retrieval, and their Reciprocal Rank Fusion (RRF) hybrid — measured with retrieval metrics, generation metrics, Ragas, and an optional LLM-as-judge.
 
+> **Status:** active development. The evaluation harness is working end-to-end and is being prepared for a public v1.0 release. Expect API surface and notebook structure to evolve until the v1.0 tag is cut.
+
 ---
 
 ## Why this exists
@@ -217,12 +219,30 @@ See [requirements.txt](requirements.txt) for the canonical list and [environment
 
 ## Roadmap
 
-- [ ] Cross-encoder reranking on top of hybrid retrieval
-- [ ] Dense retriever baseline numbers reported alongside BM25
-- [ ] CSV / Markdown export of scorecards
+The roadmap below is structured as a publish-readiness plan. The first column is **in scope for v1.0**; the second column is what lands **after** the first public release.
+
+### v1.0 — Publish
+
+- [ ] Finalize the public API for the retrieval layer (`dense_retrieve`, `bm25_retrieve`, `rrf_fuse`)
+- [ ] Lock notebook structure: `demo` + `evaluation` + `theory`, with no breaking changes between minor versions
+- [ ] Add a `LICENSE` file (MIT) before tagging v1.0
+- [ ] Write a `CONTRIBUTING.md` and an issue / PR template set
+- [ ] Add GitHub Actions CI that runs the synthetic evaluation on every push and PR
+- [ ] Cross-encoder reranking experiment behind a feature flag
+- [ ] Dense retriever baseline numbers reported alongside BM25 in the scorecard
+- [ ] CSV / Markdown export of scorecards for downstream reporting
 - [ ] Side-by-side pipeline comparison cells in the demo notebook
-- [ ] Containerized notebook environment
-- [ ] CI hook that runs the synthetic eval on every commit
+- [ ] Cut the **v1.0** release tag and publish a PyPI / GitHub release with packaged notebooks
+
+### Post-v1.0 — Iterate
+
+- [ ] Containerized notebook environment (Docker / devcontainer)
+- [ ] Pluggable retriever interface so users can drop in their own encoder / sparse index
+- [ ] Multi-corpus evaluation harness (load and benchmark multiple datasets in one run)
+- [ ] Web UI for browsing scorecards across runs
+- [ ] Optional reranker presets (cross-encoder, ColBERT, LLM-based)
+
+> Want to influence what lands in v1.0? Open an issue or start a discussion on the repository.
 
 ---
 
