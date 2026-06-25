@@ -19,28 +19,36 @@ The pipeline follows a strict layering principle:
 
 ```mermaid
 flowchart LR
-    subgraph Indexing
-        C[Corpus] --> CH[Chunker]
-        CH --> E[Embedder]
-        E --> V[(FAISS Index)]
-        CH --> T[(BM25 Index)]
-    end
+    C[Corpus] --> CH[Chunker]
+    CH --> E[Embedder]
+    E --> V[FAISS Index]
+    CH --> T[BM25 Index]
 
-    subgraph Retrieval
-        Q[Query] --> DR[Dense Retriever]
-        Q --> SR[Sparse Retriever]
-        DR --> RRF[RRF Fusion]
-        SR --> RRF
-        RRF --> HC[Hybrid Top-k]
-        DR --> DC[Dense-only Top-k]
-    end
+    Q[Query] --> DR[Dense Retriever]
+    Q --> SR[Sparse Retriever]
+    V --> DR
+    T --> SR
+    DR --> RRF[RRF Fusion]
+    SR --> RRF
+    RRF --> HC[Hybrid Top-k]
+    DR --> DC[Dense-only Top-k]
 
-    subgraph Generation
-        HC --> HA[Hybrid Answer]
-        DC --> DA[Dense-only Answer]
-        HA --> EV[Eval Harness]
-        DA --> EV
-    end
+    HC --> HA[Hybrid Answer]
+    DC --> DA[Dense-only Answer]
+    HA --> EV[Eval Harness]
+    DA --> EV
+```
+
+**Architecture (text view):**
+
+```
+INDEXING                RETRIEVAL                          GENERATION
+--------                ---------                          ----------
+Corpus ──> Chunker ──>  Dense Retriever ─┐
+            │                            ├──> RRF Fusion ──> Hybrid Top-k   ──> Hybrid Answer ─┐
+            ├──> Embedder ──> FAISS     │                                            │
+            │                            └──> Dense-only Top-k ──> Dense-only Answer ──┤
+            └──> BM25 Index ──> Sparse Retriever ─┘                                            ──> Eval Harness
 ```
 
 ---
@@ -61,6 +69,26 @@ flowchart TD
     H --> J[Generation Metrics]
     I --> K[Scorecard]
     J --> K
+```
+
+**Pipeline (text view):**
+
+```
+Synthetic Corpus
+      │
+      ▼
+   Chunking
+      │
+      ├──> BM25 Index  ──┐
+      └──> Dense Index ──┤
+                         ▼
+                  Retrieval Layer
+                         │
+                         ▼
+                   Top-k Contexts ──┬──> Retrieval Metrics ──┐
+                         │                                │
+                         ▼                                ▼
+                  Generation Layer ──> Answers ──> Generation Metrics ──> Scorecard
 ```
 
 Each layer is independently measurable. A drop in the final scorecard points to exactly one layer.
