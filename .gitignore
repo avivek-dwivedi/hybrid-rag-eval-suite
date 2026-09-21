@@ -1,10 +1,31 @@
-.venv/
-.pydeps/
-.env
+# Python
 __pycache__/
-.ipynb_checkpoints/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+.pydeps/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local model caches (Hugging Face cache normally lives outside the repo)
+.cache/
+models/
+
+# Secrets
+.env
+.env.*
+
+# Jupyter (none bundled, but keep safe)
+.ipynb_checkpoints/
+
+# OS junk
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/

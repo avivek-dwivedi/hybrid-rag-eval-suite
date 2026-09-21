@@ -1,0 +1,15 @@
+{"id": "q1", "query": "What is hybrid retrieval?", "relevant_ids": ["doc_01"]}
+{"id": "q2", "query": "How does the RRF formula combine ranked lists?", "relevant_ids": ["doc_03", "doc_06"]}
+{"id": "q3", "query": "Which job refreshes the invoice aging mart?", "relevant_ids": ["doc_17"]}
+{"id": "q4", "query": "How can analysts identify chronic late payers?", "relevant_ids": ["doc_18"]}
+{"id": "q5", "query": "What do recall at k and MRR measure in retrieval evaluation?", "relevant_ids": ["doc_05", "doc_11"]}
+{"id": "q6", "query": "What is BM25 used for in information retrieval?", "relevant_ids": ["doc_02"]}
+{"id": "q7", "query": "How does a cross-encoder reranker work?", "relevant_ids": ["doc_07"]}
+{"id": "q8", "query": "Why do dense retrievers fail on rare identifiers?", "relevant_ids": ["doc_13"]}
+{"id": "q9", "query": "What chunk size and overlap should I use when indexing documents?", "relevant_ids": ["doc_09"]}
+{"id": "q10", "query": "Why should retrieval be evaluated before generation?", "relevant_ids": ["doc_15"]}
+{"id": "q11", "query": "Which field stores invoices more than 90 days overdue?", "relevant_ids": ["doc_16"]}
+{"id": "q12", "query": "How does nDCG handle multiple relevant documents in a ranking?", "relevant_ids": ["doc_12", "doc_05"]}
+{"id": "q13", "query": "What value of the RRF constant k is commonly used?", "relevant_ids": ["doc_03", "doc_06"]}
+{"id": "q14", "query": "What happens when overdue_bucket totals drift?", "relevant_ids": ["doc_19"]}
+{"id": "q15", "query": "Which embedding models run well on CPU for small corpora?", "relevant_ids": ["doc_14"]}

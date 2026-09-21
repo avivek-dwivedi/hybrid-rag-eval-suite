@@ -1,0 +1,2118 @@
+[
+  {
+    "query_id": "q1",
+    "query": "What is hybrid retrieval?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_01"
+    ]
+  },
+  {
+    "query_id": "q1",
+    "query": "What is hybrid retrieval?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_01"
+    ]
+  },
+  {
+    "query_id": "q1",
+    "query": "What is hybrid retrieval?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      }
+    ],
+    "relevant_ids": [
+      "doc_01"
+    ]
+  },
+  {
+    "query_id": "q1",
+    "query": "What is hybrid retrieval?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      }
+    ],
+    "relevant_ids": [
+      "doc_01"
+    ]
+  },
+  {
+    "query_id": "q2",
+    "query": "How does the RRF formula combine ranked lists?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q2",
+    "query": "How does the RRF formula combine ranked lists?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q2",
+    "query": "How does the RRF formula combine ranked lists?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q2",
+    "query": "How does the RRF formula combine ranked lists?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q3",
+    "query": "Which job refreshes the invoice aging mart?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      }
+    ],
+    "relevant_ids": [
+      "doc_17"
+    ]
+  },
+  {
+    "query_id": "q3",
+    "query": "Which job refreshes the invoice aging mart?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      }
+    ],
+    "relevant_ids": [
+      "doc_17"
+    ]
+  },
+  {
+    "query_id": "q3",
+    "query": "Which job refreshes the invoice aging mart?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      }
+    ],
+    "relevant_ids": [
+      "doc_17"
+    ]
+  },
+  {
+    "query_id": "q3",
+    "query": "Which job refreshes the invoice aging mart?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      }
+    ],
+    "relevant_ids": [
+      "doc_17"
+    ]
+  },
+  {
+    "query_id": "q4",
+    "query": "How can analysts identify chronic late payers?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      }
+    ],
+    "relevant_ids": [
+      "doc_18"
+    ]
+  },
+  {
+    "query_id": "q4",
+    "query": "How can analysts identify chronic late payers?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      }
+    ],
+    "relevant_ids": [
+      "doc_18"
+    ]
+  },
+  {
+    "query_id": "q4",
+    "query": "How can analysts identify chronic late payers?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      }
+    ],
+    "relevant_ids": [
+      "doc_18"
+    ]
+  },
+  {
+    "query_id": "q4",
+    "query": "How can analysts identify chronic late payers?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      }
+    ],
+    "relevant_ids": [
+      "doc_18"
+    ]
+  },
+  {
+    "query_id": "q5",
+    "query": "What do recall at k and MRR measure in retrieval evaluation?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      }
+    ],
+    "relevant_ids": [
+      "doc_05",
+      "doc_11"
+    ]
+  },
+  {
+    "query_id": "q5",
+    "query": "What do recall at k and MRR measure in retrieval evaluation?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_05",
+      "doc_11"
+    ]
+  },
+  {
+    "query_id": "q5",
+    "query": "What do recall at k and MRR measure in retrieval evaluation?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      }
+    ],
+    "relevant_ids": [
+      "doc_05",
+      "doc_11"
+    ]
+  },
+  {
+    "query_id": "q5",
+    "query": "What do recall at k and MRR measure in retrieval evaluation?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      }
+    ],
+    "relevant_ids": [
+      "doc_05",
+      "doc_11"
+    ]
+  },
+  {
+    "query_id": "q6",
+    "query": "What is BM25 used for in information retrieval?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_02"
+    ]
+  },
+  {
+    "query_id": "q6",
+    "query": "What is BM25 used for in information retrieval?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_02"
+    ]
+  },
+  {
+    "query_id": "q6",
+    "query": "What is BM25 used for in information retrieval?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      }
+    ],
+    "relevant_ids": [
+      "doc_02"
+    ]
+  },
+  {
+    "query_id": "q6",
+    "query": "What is BM25 used for in information retrieval?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      }
+    ],
+    "relevant_ids": [
+      "doc_02"
+    ]
+  },
+  {
+    "query_id": "q7",
+    "query": "How does a cross-encoder reranker work?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      }
+    ],
+    "relevant_ids": [
+      "doc_07"
+    ]
+  },
+  {
+    "query_id": "q7",
+    "query": "How does a cross-encoder reranker work?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_14",
+        "title": "Embedding Models for CPU Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_07"
+    ]
+  },
+  {
+    "query_id": "q7",
+    "query": "How does a cross-encoder reranker work?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_07"
+    ]
+  },
+  {
+    "query_id": "q7",
+    "query": "How does a cross-encoder reranker work?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_07",
+        "title": "Cross-Encoder Reranking"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      }
+    ],
+    "relevant_ids": [
+      "doc_07"
+    ]
+  },
+  {
+    "query_id": "q8",
+    "query": "Why do dense retrievers fail on rare identifiers?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_21",
+        "title": "Shipping Updates and Alerts"
+      }
+    ],
+    "relevant_ids": [
+      "doc_13"
+    ]
+  },
+  {
+    "query_id": "q8",
+    "query": "Why do dense retrievers fail on rare identifiers?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_13"
+    ]
+  },
+  {
+    "query_id": "q8",
+    "query": "Why do dense retrievers fail on rare identifiers?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      }
+    ],
+    "relevant_ids": [
+      "doc_13"
+    ]
+  },
+  {
+    "query_id": "q8",
+    "query": "Why do dense retrievers fail on rare identifiers?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      }
+    ],
+    "relevant_ids": [
+      "doc_13"
+    ]
+  },
+  {
+    "query_id": "q9",
+    "query": "What chunk size and overlap should I use when indexing documents?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_09"
+    ]
+  },
+  {
+    "query_id": "q9",
+    "query": "What chunk size and overlap should I use when indexing documents?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      }
+    ],
+    "relevant_ids": [
+      "doc_09"
+    ]
+  },
+  {
+    "query_id": "q9",
+    "query": "What chunk size and overlap should I use when indexing documents?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      }
+    ],
+    "relevant_ids": [
+      "doc_09"
+    ]
+  },
+  {
+    "query_id": "q9",
+    "query": "What chunk size and overlap should I use when indexing documents?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_09"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "query": "Why should retrieval be evaluated before generation?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      }
+    ],
+    "relevant_ids": [
+      "doc_15"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "query": "Why should retrieval be evaluated before generation?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      }
+    ],
+    "relevant_ids": [
+      "doc_15"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "query": "Why should retrieval be evaluated before generation?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_15"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "query": "Why should retrieval be evaluated before generation?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_15",
+        "title": "Retrieval Before Generation"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_08",
+        "title": "When Hybrid Retrieval Helps"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_15"
+    ]
+  },
+  {
+    "query_id": "q11",
+    "query": "Which field stores invoices more than 90 days overdue?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      }
+    ],
+    "relevant_ids": [
+      "doc_16"
+    ]
+  },
+  {
+    "query_id": "q11",
+    "query": "Which field stores invoices more than 90 days overdue?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      }
+    ],
+    "relevant_ids": [
+      "doc_16"
+    ]
+  },
+  {
+    "query_id": "q11",
+    "query": "Which field stores invoices more than 90 days overdue?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      }
+    ],
+    "relevant_ids": [
+      "doc_16"
+    ]
+  },
+  {
+    "query_id": "q11",
+    "query": "Which field stores invoices more than 90 days overdue?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      }
+    ],
+    "relevant_ids": [
+      "doc_16"
+    ]
+  },
+  {
+    "query_id": "q12",
+    "query": "How does nDCG handle multiple relevant documents in a ranking?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_12",
+      "doc_05"
+    ]
+  },
+  {
+    "query_id": "q12",
+    "query": "How does nDCG handle multiple relevant documents in a ranking?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_12",
+      "doc_05"
+    ]
+  },
+  {
+    "query_id": "q12",
+    "query": "How does nDCG handle multiple relevant documents in a ranking?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      }
+    ],
+    "relevant_ids": [
+      "doc_12",
+      "doc_05"
+    ]
+  },
+  {
+    "query_id": "q12",
+    "query": "How does nDCG handle multiple relevant documents in a ranking?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_10",
+        "title": "Evaluation Set Design"
+      }
+    ],
+    "relevant_ids": [
+      "doc_12",
+      "doc_05"
+    ]
+  },
+  {
+    "query_id": "q13",
+    "query": "What value of the RRF constant k is commonly used?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_05",
+        "title": "Retrieval Evaluation Metrics"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q13",
+    "query": "What value of the RRF constant k is commonly used?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_12",
+        "title": "Normalized Discounted Cumulative Gain"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q13",
+    "query": "What value of the RRF constant k is commonly used?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q13",
+    "query": "What value of the RRF constant k is commonly used?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_06",
+        "title": "RRF Fusion Formula"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_11",
+        "title": "Mean Reciprocal Rank"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_03",
+      "doc_06"
+    ]
+  },
+  {
+    "query_id": "q14",
+    "query": "What happens when overdue_bucket totals drift?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_19"
+    ]
+  },
+  {
+    "query_id": "q14",
+    "query": "What happens when overdue_bucket totals drift?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_18",
+        "title": "Collections Glossary"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_21",
+        "title": "Shipping Updates and Alerts"
+      }
+    ],
+    "relevant_ids": [
+      "doc_19"
+    ]
+  },
+  {
+    "query_id": "q14",
+    "query": "What happens when overdue_bucket totals drift?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      }
+    ],
+    "relevant_ids": [
+      "doc_19"
+    ]
+  },
+  {
+    "query_id": "q14",
+    "query": "What happens when overdue_bucket totals drift?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_19",
+        "title": "Data Quality Checks for Aging Data"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_16",
+        "title": "Invoice Aging Mart Schema"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_17",
+        "title": "Invoice Aging Mart Refresh Job"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_20",
+        "title": "Refund Policy Overview"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_02",
+        "title": "BM25 Sparse Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_19"
+    ]
+  },
+  {
+    "query_id": "q15",
+    "query": "Which embedding models run well on CPU for small corpora?",
+    "strategy": "bm25",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_14",
+        "title": "Embedding Models for CPU Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_03",
+        "title": "Reciprocal Rank Fusion"
+      }
+    ],
+    "relevant_ids": [
+      "doc_14"
+    ]
+  },
+  {
+    "query_id": "q15",
+    "query": "Which embedding models run well on CPU for small corpora?",
+    "strategy": "dense",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_14",
+        "title": "Embedding Models for CPU Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_01",
+        "title": "Hybrid Retrieval"
+      }
+    ],
+    "relevant_ids": [
+      "doc_14"
+    ]
+  },
+  {
+    "query_id": "q15",
+    "query": "Which embedding models run well on CPU for small corpora?",
+    "strategy": "hybrid-rrf",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_14",
+        "title": "Embedding Models for CPU Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      }
+    ],
+    "relevant_ids": [
+      "doc_14"
+    ]
+  },
+  {
+    "query_id": "q15",
+    "query": "Which embedding models run well on CPU for small corpora?",
+    "strategy": "hybrid-rrf-rerank",
+    "results": [
+      {
+        "rank": 1,
+        "doc_id": "doc_14",
+        "title": "Embedding Models for CPU Retrieval"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_22",
+        "title": "FAISS Vector Index"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_04",
+        "title": "Dense Vector Retrieval"
+      },
+      {
+        "rank": 4,
+        "doc_id": "doc_13",
+        "title": "Sparse Versus Dense Failure Modes"
+      },
+      {
+        "rank": 5,
+        "doc_id": "doc_09",
+        "title": "Chunking Strategy"
+      }
+    ],
+    "relevant_ids": [
+      "doc_14"
+    ]
+  }
+]

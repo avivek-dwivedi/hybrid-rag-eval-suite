@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 920" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+    <style>
+      .box { fill: #f4f5f8; stroke: #4a4e69; stroke-width: 1.5; rx: 8; }
+      .opt { fill: #fdf6ec; stroke: #b08968; stroke-width: 1.5; stroke-dasharray: 5 3; }
+      .label { font-size: 15px; fill: #1a1a2e; text-anchor: middle; }
+      .sub { font-size: 11px; fill: #555; text-anchor: middle; }
+      .edge { stroke: #444; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+      .title { font-size: 19px; font-weight: 600; fill: #1a1a2e; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text x="380" y="36" class="title">Hybrid RAG Evaluation Suite — Retrieval Architecture</text>
+
+  <!-- Local corpus -->
+  <rect x="270" y="60" width="220" height="48" rx="8" class="box"/>
+  <text x="380" y="83" class="label">Local Corpus</text>
+  <text x="380" y="99" class="sub">data/documents.jsonl</text>
+
+  <!-- Split to two retrievers -->
+  <path d="M 380 108 L 380 130 L 210 150 M 380 130 L 550 150" class="edge"/>
+
+  <!-- Dense -->
+  <rect x="90" y="150" width="240" height="48" rx="8" class="box"/>
+  <text x="210" y="172" class="label">Dense Retrieval</text>
+  <text x="210" y="188" class="sub">embeddings + cosine similarity</text>
+
+  <!-- BM25 -->
+  <rect x="430" y="150" width="240" height="48" rx="8" class="box"/>
+  <text x="550" y="172" class="label">BM25 / Sparse Retrieval</text>
+  <text x="550" y="188" class="sub">exact keyword match</text>
+
+  <!-- Down to RRF -->
+  <path d="M 210 198 L 210 230 L 360 260 M 550 198 L 550 230 L 400 260" class="edge"/>
+  <path d="M 380 260 L 380 290" class="edge"/>
+
+  <!-- RRF -->
+  <rect x="280" y="290" width="200" height="48" rx="8" class="box"/>
+  <text x="380" y="312" class="label">RRF Fusion</text>
+  <text x="380" y="328" class="sub">sum 1 / (k + rank), k = 60</text>
+
+  <path d="M 380 338 L 380 368" class="edge"/>
+
+  <!-- Optional reranker -->
+  <rect x="255" y="368" width="250" height="48" rx="8" class="opt"/>
+  <text x="380" y="390" class="label">Optional Reranker</text>
+  <text x="380" y="406" class="sub">cross-encoder (--rerank)</text>
+
+  <path d="M 380 416 L 380 446" class="edge"/>
+
+  <!-- Ranked documents -->
+  <rect x="265" y="446" width="230" height="48" rx="8" class="box"/>
+  <text x="380" y="468" class="label">Ranked Documents</text>
+  <text x="380" y="484" class="sub">per-query top-k list</text>
+
+  <path d="M 380 494 L 380 524" class="edge"/>
+
+  <!-- Evaluation -->
+  <rect x="280" y="524" width="200" height="48" rx="8" class="box"/>
+  <text x="380" y="546" class="label">Retrieval Evaluation</text>
+  <text x="380" y="562" class="sub">labeled queries (data/eval-queries.jsonl)</text>
+
+  <path d="M 380 572 L 380 602" class="edge"/>
+
+  <!-- Metrics -->
+  <rect x="280" y="602" width="200" height="48" rx="8" class="box"/>
+  <text x="380" y="624" class="label">Real Metrics</text>
+  <text x="380" y="640" class="sub">Recall@k · MRR · nDCG@k</text>
+
+  <path d="M 380 650 L 380 680" class="edge"/>
+
+  <!-- Artifacts -->
+  <rect x="230" y="680" width="300" height="48" rx="8" class="box"/>
+  <text x="380" y="702" class="label">Static Results Report</text>
+  <text x="380" y="718" class="sub">results/*.json + results/report.html</text>
+
+  <path d="M 380 728 L 380 758" class="edge"/>
+
+  <!-- Browser evidence -->
+  <rect x="250" y="758" width="260" height="48" rx="8" class="box"/>
+  <text x="380" y="780" class="label">Browser Screenshot Evidence</text>
+  <text x="380" y="796" class="sub">evidence/*.png</text>
+
+  <!-- Legend -->
+  <rect x="60" y="840" width="14" height="14" rx="3" class="box"/>
+  <text x="82" y="852" class="sub" text-anchor="start">core path (runs without reranker)</text>
+  <rect x="60" y="864" width="14" height="14" rx="3" class="opt"/>
+  <text x="82" y="876" class="sub" text-anchor="start">optional stage</text>
+</svg>
